@@ -1,4 +1,4 @@
-"""
+""""
 Serializers for the user API View.
 """
 from django.contrib.auth import (
@@ -12,6 +12,7 @@ from rest_framework import serializers
 
 class UserSerializer(serializers.ModelSerializer):
     """Serializer for the user object."""
+
 
     class Meta:
         model = get_user_model()
